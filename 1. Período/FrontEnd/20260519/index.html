@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Exercicio 01 -->
+    <h3>Exercicio 01</h3>
+
+    <p>Criar um botão que mostre uma mensagem de saudação em um paragrafo pré-existente, com base no nome digitado na caixa de texto loga acima do botão</p>
+    <input type="text" placeholder="Digite seu nome" id="nome">
+    <br>
+    <br>
+    <button onclick="bemVindo()">Clique aqui</button>
+    <br>
+    <p id="texto"></p>
+    
+    <!-- Exercicio 02 -->
+     <h3>Exercicio 02</h3>
+
+     <p id="texto02">O segredo da vida não é ter tudo o que ama, mas amar tudo o que tem!</p>
+     <button id="troca-estilo" onclick="cores()">Troca Estilo</button>
+
+     <!-- Exercicio 03 -->
+      <h3>Exercicio 03</h3>
+      <p>Clique no botão para alterar a cor da página</p>
+      <button id="vermelho" onclick="corPagina('red')">Vermelho</button>
+      <button id="Azul" onclick="corPagina('blue')">Azul</button>
+      <button id="Verde" onclick="corPagina('green')">Verde</button>
+      <button id="Original" onclick="corPagina('white')">Original</button>
+
+      <!-- Exercicio 04 -->
+       <h3>Exercicio 04</h3>
+       <ol>
+        <li>Cria novos paragrafos utilizando o método <strong>createElement</strong> e <strong>appendChild</strong></li>
+        <li>Remove o ultimo paragrafo utilizando o método <strong>removeChild</strong> e <strong>lastElementChild</strong></li>
+       </ol>
+
+       <div id="conteudo">
+       </div>
+
+       <button id="novo-paragrafo" onclick="addParagrafo()">Criar Novo Paragrafo</button>
+       <button id="remove-paragrafo" onclick="removerParagrafo()">Remover Ultimo Paragrafo</button>
+
+       <!-- Exercicio 05 -->
+        <h3>Exercicio 05</h3>
+        <p>Mostre e esconda as imagens, ao clicar em determinado botão</p>
+        <img src="Img/passarinho.jpg" alt="passarinho" id="imagem" width="500" display="block">
+        <br>
+        <button id="mostra" onclick="mostrar()">Mostrar imagem</button>
+        <button id="esconder" onclick="esconder()">Esconder imagem</button>
+
+        <!-- Exercicio 06 -->
+         <h3>Exercicio 06</h3>
+         <p>Troca a imagem para uma imagem do assunto selecionado pelo usuário</p>
+         <img src="" id="imagem06" width="500px">
+         <label for="assunto">Escolha o tipo de animal</label>
+         <select id="assunto" onchange="trocaimg()">
+            <option value="gato">Gato</option>
+            <option value="cachorro">Cachorro</option>
+            <option value="rato">Rato</option>
+         </select>
+         <br>
+         
+    <script src="script.js"></script>
+</body>
+</html>
