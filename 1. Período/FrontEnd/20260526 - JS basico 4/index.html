@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Exercicio 01 -->
+    <h3>Exercicio 01</h3>
+    <p> Digite o seu nome na caixa de texto e clique no botão para receber a Saudação</p>
+    <input type="text" placeholder="Digite seu nome" id="name">
+    <button id="ex01">Clique Aqui!</button>
+    <p id="bem-vindo"></p>
+    <hr>
+
+    <!-- Exercicio 02 -->
+    <h3>Exercicio 02</h3>
+    <p>Clique no botão para alterar o tamanho e a cor do texto de um parágrafo</p>
+    <p id="text02">Existem 2 tipos de pessoas: As que sabem contar e as que não sabem!</p>
+    <button id="ex02">Alterar Estilo</button>
+    <hr>
+
+    <!-- Exercicio 03 -->
+    <h3>Exercicio 03</h3>
+    <p>Clique no botão para alterar a cor de fundo da tela. Deve ter 4 botões, sendo que um deles deve mostrar a cor original de fundo de tela.</p>
+    <button class="tela" id="blue">Tela Azul</button>
+    <button class="tela" id="red">Tela Vermelha</button>
+    <button class="tela" id="green">Tela Verde</button>
+    <button class="tela" id="white">Tela Original</button>
+    <hr>
+
+    <!-- Exercicio 04 -->
+    <h3>Exercicio 04</h3>
+    <p>Clique no botão para criar novo parágrafo. Você deve digitar o texto a ser inserido no parágrafo. Um
+    novo botão deve ser criado para remover sempre o ultimo parágrafo adicionado. Quando não houver
+    mais parágrafos, uma msg deve ser apresentada informando esta condição</p>
+    <button id="ex04">add paragrafo</button>
+    <button id="ex042">remover paragrafo</button>
+    <div id="div">
+        
+    </div>
+    <hr>
+
+    <!-- Exercicio 05 -->
+    <h3>Exercicio 05</h3>
+    <p>Clique no botão para mostrar/oculta uma imagem</p>
+    <img src="./imgs/urso.jpg" id="img" height="300px">
+    <br>
+    <button id="exibir-img">Exibir imagem</button>
+    <button id="ocultar-img">Ocultar imagem</button>
+    <hr>
+
+    <!-- Exercicio 06 -->
+     <h3>Exercicio 06</h3>
+     <p> Utilizando o elemento HTML SELECT para trocar a Imagem na tela</p>
+     <select name="" id="seletor">
+        <option value="bota">bota</option>
+        <option value="picareta">picareta</option>
+        <option value="enxada">enxada</option>
+     </select>
+     <br>
+     <img src="" alt="" id="img06" height="300px">
+     <hr>
+
+     <!-- Exercicio 07 -->
+    <h3>Exercicio 07</h3>
+    <p>Muda a forma e a cor e o tamanho do elemento DIV ao passar o mouse sobre ele e a div deve voltar ao estilo original quando o mouse sai da área da div.</p>
+    <div id="div07" style="height: 300px; width: 300px; background-color: blue;">
+    </div>
+    <hr>
+
+    <!-- Exercicio  08-->
+    <h3>Exercicio 08</h3>
+    <p> Apresenta um texto ao passar o mouse sobre a imagem.</p>
+    <div id="div08">
+
+    </div>
+    <img src="./imgs/urso.jpg" id="img08" height="300px">
+    <hr>
+
+    <!-- Exercicio 09 -->
+    <h3>Exercico 09</h3>
+    <p> Clique no botão para inserir itens numa lista não ordenada. O usuário deve informar quantos elementos ele quer criar e o sistema deve pedir que o usuário digite o texto para cada item adicionado.</p>
+    <label for="itens09">Quantos itens você quer add?</label>
+    <input id="itens09" type="number">
+    <button id="button09-enviar">Enviar</button>
+    <br>
+    <br>
+    <div id="div09" style="display: none;">
+        <label for="text09">Qual o seu texto?</label>
+        <input type="text" id="text09">
+        <button id="button09-inserir">Inserir</button>
+        <button id="button09-apagar">Apagar</button>
+    </div>
+    <ul id="lista09">
+
+    </ul>
+    <hr>
+
+    <!-- Exercicio 10 -->
+    <h3>Exercicio 10</h3>
+    <p>Lista de compras</p>
+    <div id="div10" style="display: flex; justify-content: space-around;">
+        <figure>
+            <img src="./imgs/compra.jpg" alt="celular" id="celular" height="100px">
+            <figcaption>Celular</figcaption>
+        </figure>
+        <figure>
+            <img src="./imgs/compra.jpg" alt="tablet" id="tablet" height="100px">  
+            <figcaption>Tablet</figcaption> 
+        </figure>
+        <figure>
+            <img src="./imgs/compra.jpg" alt="notebook" id="notebook" height="100px">
+            <figcaption>Notebook</figcaption>
+        </figure>
+    </div>
+    <p>Itens da Lista: </p>
+    <ul id="lista10">
+        
+    </ul>
+    <p>Valor da Compra: </p>
+    <p id="total-compra"></p>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
