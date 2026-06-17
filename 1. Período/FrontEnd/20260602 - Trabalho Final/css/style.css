@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    /* min-height: calc(70vh - 180px);
+     */
+     
+    min-height: calc(100vh - 180px);
+}
+
+h2{
+    color: rgb(34, 34, 127);
+}
+
+.card{
+    margin: 30px 150px;
+    padding: 20px;
+    min-height: 150px;
+
+    background-color: rgb(230, 220, 230);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inputs {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+
+    flex: 0.8;
+}
+
+input, select{
+    /* margin-bottom: 10px; */
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+
+button{
+    background-color: rgb(34, 34, 127);
+    color: white;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: none;
+    padding: 8px 16px;
+    align-self: flex-start;
+    transition: transform 0.1s ease;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+label{
+    font-weight: bold;
+}
+
+.box-cadastro{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}

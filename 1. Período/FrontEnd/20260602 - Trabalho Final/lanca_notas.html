@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lancamento de Notas</title>
+    <link href="./css/style.css" rel="stylesheet"></link>
+    <link href="./css/navbar.css" rel="stylesheet"></link>
+</head>
+<body>
+    <header>
+        <h1>Portal Academico</h1>
+        <h3>Faculdade de Tecnologia</h3>
+        <div class="navbar">
+            <p id="inicio" class="nav-item">Inicio</p>
+            <p id="cadastro" class="nav-item" href="cadastro.html">Cadastro de Alunos</p>
+            <p id="notas" class="nav-item" href="notas.html">Notas</p>
+            <p id="relatorios" class="nav-item" href="relatorios.html">Relatórios</p>
+            <p id="sobre" class="nav-item" href="sobre">sobre</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="box-cadastro card">
+            <h2>Lançamento de Notas</h2>
+            <div class="inputs">
+                <div class="campo">
+                    <label for="nome-aluno">Aluno</label>
+                    <input type="text" id="nome-aluno">
+                </div>
+
+                <div class="campo">
+                    <label for="disciplina">Curso</label>
+                    <select name="" id="disciplina">
+                        <option value="escolha-disciplina">Escolha uma Disciplinha</option>
+                        <option value="algoritmos">Algoritmos e Lógica de Programação</option>
+                        <option value="poo">Programação Orientada a Objetos</option>
+                        <option value="estrutura-dados">Estrutura de Dados</option>
+                        <option value="banco-dados">Banco de Dados</option>
+                        <option value="engenharia-software">Engenharia de Software</option>
+                        <option value="desenvolvimento-web">Desenvolvimento Web</option>
+                        <option value="redes">Redes de Computadores</option>
+                        <option value="sistemas-operacionais">Sistemas Operacionais</option>
+                        <option value="seguranca">Segurança da Informação</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="nota1">Nota 1</label>
+                    <input type="number" id="nota1">
+                </div>
+
+                <div class="campo">
+                    <label for="nota 2">Nota 2</label>
+                    <input type="number" id="nota2">
+                </div>
+            </div>
+            <button>Salvar Notas</button>
+        </div>
+    </div>
+
+    <script src="js/navbar.js"></script>
+</body>
+</html>
